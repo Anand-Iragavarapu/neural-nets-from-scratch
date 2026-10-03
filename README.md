@@ -4,14 +4,14 @@ An MLP and a CNN written by hand in NumPy, with no deep learning libraries. I wr
 
 Built for Applied AIML 2, Adelaide University (2026).
 
-## 1. MLP on Iris (`mlp-iris/`)
+## 1. MLP on Iris (`mlp_iris.ipynb`)
 
 - 4 inputs, 16 ReLU hidden units, 3 softmax outputs
 - He initialisation, cross-entropy loss, mini-batch SGD (batch 16, lr 0.01, 100 epochs)
 - Gradient check: worst relative error 1.7e-08
 - **Test accuracy: 93.3% (28/30).** Both errors were Versicolor predicted as Virginica, the two classes that overlap most
 
-## 2. CNN on MNIST (`cnn-mnist/`)
+## 2. CNN on MNIST (`cnn_mnist.ipynb`)
 
 - Conv(6, 3x3) > MaxPool > Conv(16, 3x3) > MaxPool > Dense(128) > Dense(10), 53,558 parameters
 - Convolution done with im2col so it runs as one matrix multiply; col2im adds overlapping gradients back
